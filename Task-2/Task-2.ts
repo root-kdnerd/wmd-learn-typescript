@@ -1,2 +1,2 @@
-const greeting: string = "Hello, world!";
-console.log(greeting);
+const name: string = 'Zia Ullah Khan';
+console.log('Hello Mr. ${name}, would you like to learn some Python today?');
