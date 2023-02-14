@@ -1,4 +1,4 @@
 const personName: string = "Raheel";
-console.log(`Lowercase: ${personName.toLowerCase()}`);
-console.log(`Uppercase: ${personName.toUpperCase()}`);
-console.log(`Titlecase: ${personName.charAt(0).toUpperCase()}${personName.slice(1).toLowerCase()}`);
+console.log(`Lowercase: ${personName.toLocaleLowerCase()}`);
+console.log(`Uppercase: ${personName.toLocaleUpperCase()}`);
+console.log(`Titlecase: ${personName.charAt(0).toLocaleUpperCase()}${personName.slice(1).toLocaleLowerCase()}`);
