@@ -12,4 +12,4 @@ function multiply(a, b) {
 function divide(a, b) {
     return a / b;
 }
-module.exports = { add: add, subtract: subtract, multiply: multiply, divide: divide };
+module.exports = { add, subtract, multiply, divide };

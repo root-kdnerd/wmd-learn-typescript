@@ -12,3 +12,5 @@ const fruits = ["apple", "banana", "cherry", "durian", "elderberry"];
 const deletedItems = fruits.customSplice(1, 2, "pineapple", "grape");
 console.log("Deleted items:", deletedItems);
 console.log("Updated array:", fruits);
+// 1. Getting error on this.length - start --- implicit type any error but enabled and false the "noImplicitThis" option in tsconfig.json to resolve 
+// 2. Enable "noEmitOnError: true" in tsconfig.json to restrict transpiling

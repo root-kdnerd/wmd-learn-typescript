@@ -1,3 +1,4 @@
-var famous_person = "Bruce Schneier";
-var message = "Amateurs hack systems, professionals hack people";
-console.log("".concat(famous_person, " once said, \"").concat(message, "\""));
+"use strict";
+const famous_person = "Bruce Schneier";
+const message = "Amateurs hack systems, professionals hack people";
+console.log(`${famous_person} once said, "${message}"`);

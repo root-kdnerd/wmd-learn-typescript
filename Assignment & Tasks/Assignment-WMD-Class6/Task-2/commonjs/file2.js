@@ -6,4 +6,4 @@ function getRectangleArea(width, height) {
 function getCircleArea(radius) {
     return Math.PI * radius * radius;
 }
-module.exports = { getRectangleArea: getRectangleArea, getCircleArea: getCircleArea };
+module.exports = { getRectangleArea, getCircleArea };

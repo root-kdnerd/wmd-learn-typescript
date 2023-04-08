@@ -1,3 +1,8 @@
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
 /*import inquirer from "inquirer";
 import chalk from "chalk";
 import animation from "chalk-animation";
@@ -43,9 +48,9 @@ inquirer
       console.log(chalk.red("Okay, goodbye!"));
     }
   }); */
-import inquirer from 'inquirer';
-import chalk from 'chalk';
-import animation from 'chalk-animation';
+const inquirer_1 = __importDefault(require("inquirer"));
+const chalk_1 = __importDefault(require("chalk"));
+const chalk_animation_1 = __importDefault(require("chalk-animation"));
 function promptUser() {
     const questions = [
         {
@@ -65,12 +70,12 @@ function promptUser() {
             message: 'Do you want to exit?',
         },
     ];
-    inquirer.prompt(questions).then((answers) => {
+    inquirer_1.default.prompt(questions).then((answers) => {
         const { name, color, exit } = answers;
         // Use chalk to log the name in the chosen color
-        console.log(chalk.hex(getColorHexCode(color))(`Hello, ${name}!`));
+        console.log(chalk_1.default.hex(getColorHexCode(color))(`Hello, ${name}!`));
         // Use chalk-animation to animate the color of the name
-        const rainbow = animation.rainbow(`Hello, ${name}!`);
+        const rainbow = chalk_animation_1.default.rainbow(`Hello, ${name}!`);
         setTimeout(() => {
             rainbow.stop();
         }, 5000);

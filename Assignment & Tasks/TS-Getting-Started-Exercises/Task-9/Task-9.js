@@ -1,3 +1,4 @@
-var favNumber = 7;
-var message = "My favorite number is ".concat(favNumber, ".");
+"use strict";
+const favNumber = 7;
+const message = `My favorite number is ${favNumber}.`;
 console.log(message);

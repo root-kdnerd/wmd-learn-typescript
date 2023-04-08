@@ -1,4 +1,9 @@
-import inquirer from 'inquirer';
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const inquirer_1 = __importDefault(require("inquirer"));
 // Define the questions for the user
 const questions = [
     {
@@ -48,7 +53,7 @@ function performOperation(operation, num1, num2) {
     }
 }
 // Prompt the user for input and perform the selected operation
-inquirer.prompt(questions).then((answers) => {
+inquirer_1.default.prompt(questions).then((answers) => {
     const result = performOperation(answers.operation, Number(answers.num1), Number(answers.num2));
     console.log(`Result: ${result}`);
 });

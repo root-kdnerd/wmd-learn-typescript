@@ -1,8 +1,8 @@
 "use strict";
-exports.__esModule = true;
-var prompt = require("prompt-sync")({ sigint: true });
-var alienColor = prompt("What is Alien's color? (Color is case-sensitive)");
-console.log("\n");
+Object.defineProperty(exports, "__esModule", { value: true });
+const prompt = require("prompt-sync")({ sigint: true });
+let alienColor = prompt("What is Alien's color? (Color is case-sensitive)");
+console.log(`\n`);
 if (alienColor === 'Green') {
     console.log('The player earned 5 points.');
 }

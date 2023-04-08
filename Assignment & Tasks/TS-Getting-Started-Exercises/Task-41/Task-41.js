@@ -1,7 +1,7 @@
-var magicians = ['David Copperfield', 'Harry Houdini', 'Penn Jillette', 'Teller'];
+"use strict";
+let magicians = ['David Copperfield', 'Harry Houdini', 'Penn Jillette', 'Teller'];
 function show_magicians(magicians) {
-    for (var _i = 0, magicians_1 = magicians; _i < magicians_1.length; _i++) {
-        var magician = magicians_1[_i];
+    for (let magician of magicians) {
         console.log(magician);
     }
 }

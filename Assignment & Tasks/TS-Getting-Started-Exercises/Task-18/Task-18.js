@@ -1,26 +1,18 @@
-var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
-    if (pack || arguments.length === 2) for (var i = 0, l = from.length, ar; i < l; i++) {
-        if (ar || !(i in from)) {
-            if (!ar) ar = Array.prototype.slice.call(from, 0, i);
-            ar[i] = from[i];
-        }
-    }
-    return to.concat(ar || Array.prototype.slice.call(from));
-};
+"use strict";
 // Declare an array of locations
-var locations = ["Bali", "New York", "Tokyo", "Paris", "Sydney"];
+const locations = ["Bali", "New York", "Tokyo", "Paris", "Sydney"];
 // Print the array in its original order
 console.log("Original order:");
 console.log(locations);
 // Print the array in alphabetical order without modifying the original array
 console.log("\nAlphabetical order:");
-console.log(__spreadArray([], locations, true).sort());
+console.log([...locations].sort());
 // Print the array to show that it's still in its original order
 console.log("\nStill in original order:");
 console.log(locations);
 // Print the array in reverse alphabetical order without modifying the original array
 console.log("\nReverse alphabetical order:");
-console.log(__spreadArray([], locations, true).sort().reverse());
+console.log([...locations].sort().reverse());
 // Print the array to show that it's still in its original order
 console.log("\nStill in original order:");
 console.log(locations);

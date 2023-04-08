@@ -1,3 +1,4 @@
+"use strict";
 /*let a = 1
 let b = 4
 console.log(a+b)
@@ -14,8 +15,17 @@ for (let i = 0; i < words.length; i++) {
 
   const wordString = words.join("\n");
 console.log(wordString); */
-var myNumbers = [36, 42, 33, 49, 500];
-console.log("\nAscending Order:");
-console.log(myNumbers.sort());
-console.log("\nDescending Order:");
-console.log(myNumbers.reverse());
+/*const myNumbers: number[] = [36, 42, 33, 49, 500];
+
+console.log("\nAscending Order:")
+console.log(myNumbers.sort())
+
+console.log("\nDescending Order:")
+console.log(myNumbers.reverse()) */
+// 8 apr 2023
+let x = "abc";
+let y = "456";
+console.log(x + y);
+let x1 = Number(x);
+let y1 = Number(y);
+console.log(x1 + y1);

@@ -1,7 +1,8 @@
-var guestList = ["Albert Einstein", "Marie Curie", "Neil Armstrong", "Ada Lovelace", "Stephen Hawking", "Isaac Newton"];
+"use strict";
+const guestList = ["Albert Einstein", "Marie Curie", "Neil Armstrong", "Ada Lovelace", "Stephen Hawking", "Isaac Newton"];
 // Print the original guest list
 console.log("Original guest list:");
-for (var i = 0; i < guestList.length; i++) {
+for (let i = 0; i < guestList.length; i++) {
     console.log(guestList[i]);
 }
 // Add one new guest to the beginning of the array
@@ -13,6 +14,6 @@ guestList.push("Nikola Tesla");
 // Print a message indicating the number of people invited to dinner
 console.log("\nNumber of people invited to dinner: " + guestList.length);
 // Loop through the array and print a message inviting each person to dinner
-for (var i = 0; i < guestList.length; i++) {
+for (let i = 0; i < guestList.length; i++) {
     console.log("Dear " + guestList[i] + ", you are cordially invited to dinner at my place!");
 }

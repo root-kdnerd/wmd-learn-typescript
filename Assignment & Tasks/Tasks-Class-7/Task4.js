@@ -1,5 +1,10 @@
-import promptSync from 'prompt-sync';
-const prompt = promptSync();
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const prompt_sync_1 = __importDefault(require("prompt-sync"));
+const prompt = (0, prompt_sync_1.default)();
 // Get input from user for array of integers
 const arr = [];
 for (let i = 0; i < 5; i++) {

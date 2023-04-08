@@ -1,5 +1,6 @@
-var pizzas = ['pepperoni', 'margherita', 'hawaiian'];
-for (var i = 0; i < pizzas.length; i++) {
-    console.log("I like ".concat(pizzas[i], " pizza."));
+"use strict";
+const pizzas = ['pepperoni', 'margherita', 'hawaiian'];
+for (let i = 0; i < pizzas.length; i++) {
+    console.log(`I like ${pizzas[i]} pizza.`);
 }
-console.log("I really love pizza!");
+console.log(`I really love pizza!`);

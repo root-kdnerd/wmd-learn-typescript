@@ -1,4 +1,5 @@
-var favorite_fruits = ['banana', 'mango', 'strawberry'];
+"use strict";
+let favorite_fruits = ['banana', 'mango', 'strawberry'];
 if (favorite_fruits.includes('banana')) {
     console.log("You really like bananas!");
 }

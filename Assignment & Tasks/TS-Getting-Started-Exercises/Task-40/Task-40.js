@@ -1,5 +1,6 @@
+"use strict";
 function make_album(artist, title, tracks) {
-    var album = {
+    let album = {
         'artist': artist,
         'title': title
     };

@@ -1,5 +1,6 @@
+"use strict";
 // Create an object containing information about a person
-var person = {
+const person = {
     name: "John Doe",
     age: 30,
     occupation: "Software Engineer",
@@ -14,7 +15,7 @@ console.log("Name: " + person.name);
 console.log("Occupation: " + person.occupation);
 // Print out the person's hobbies
 console.log("Hobbies:");
-for (var i = 0; i < person.hobbies.length; i++) {
+for (let i = 0; i < person.hobbies.length; i++) {
     console.log("- " + person.hobbies[i]);
 }
 // Print out the person's contact information
